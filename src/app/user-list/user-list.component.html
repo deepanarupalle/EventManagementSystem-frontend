@@ -1,0 +1,23 @@
+<table class = "table table-striped">
+
+    <thead style="font-family: Arial, Helvetica, sans-serif; font-size: larger;font-weight: 400;color:firebrick;">
+        <tr>
+            <th> First Name</th>
+            <th> Last Name </th>
+            <th> Email Id</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody style="font-style: oblique; font-size: larger; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+        <tr *ngFor = "let user of users" >
+            <td> {{ user.firstName }} </td>
+            <td> {{ user.lastName }} </td>
+            <td> {{ user.emailId }} </td>
+            <td>
+                <button (click) = "updateUser(user.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteUser(user.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "userDetails(user.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table><br><br>
