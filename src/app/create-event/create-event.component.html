@@ -1,0 +1,66 @@
+
+<div class="col-md-6 offset-md-3">
+    <!--<h3> Create Vegetable </h3>-->
+    <form (ngSubmit) = "onSubmit()">
+    
+        <!-- <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;">  Id</label>
+            <input type="number" class ="form-control" id = "EventId"
+                [(ngModel)] = "event.eventId" name = "eventId">
+        </div> -->
+    
+        <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px; color:  rgb(141, 57, 57);">  Name</label>
+            <input type="text" class ="form-control" id = "EventName"
+                [(ngModel)] = "event.eventName" name = "eventName"><br>
+        </div>
+        <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;color: rgb(141, 57, 57);">  Cost</label>
+            <input type="text" class ="form-control" id = "EventCost"
+                [(ngModel)] = "event.eventCost" name = "eventCost"><br>
+        </div>
+        <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;color: rgb(141, 57, 57);">  Location</label>
+            <input type="text" class ="form-control" id = "Location"
+                [(ngModel)] = "event.location" name = "location"><br>
+        </div>
+        <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;color: rgb(141, 57, 57);">  From Date&Time</label>
+            <input type="text" class ="form-control" id = "fromDate&Time"
+                [(ngModel)] = "event. fromDateTime" name = " FromDateTime"><br>
+        </div>
+
+        <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;color: rgb(141, 57, 57);">  To Date&Time</label>
+            <input type="text" class ="form-control" id = "ToDate&Time"
+                [(ngModel)] = "event. toDateTime" name = " toDateTime"><br>
+        </div>
+
+
+
+        <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;color: rgb(141, 57, 57);"> Quantity</label>
+            <input type="number" class ="form-control" id = "Quantity"
+                [(ngModel)] = "event.quantity" name = "quantity"><br>
+        </div>
+
+        <!-- <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;color: rgb(141, 57, 57);"> Discount Type</label>
+            <input type="text" class ="form-control" id = "DiscountType"
+                [(ngModel)] = "event.discountType" name = "discountType"><br>
+        </div> -->
+
+        <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;color: rgb(141, 57, 57);"> Discount </label>
+            <input type="text" class ="form-control" id = "Discount"
+                [(ngModel)] = "event.discount" name = "discount"><br>
+        </div><br>
+       
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>&nbsp;&nbsp;&nbsp;
+
+       <button class="btn btn-success"> <a routerLink="/create-payment">Payment</a></button>
+        <!-- <button   (onclick)="onSave()">Payment</button> -->
+        <!-- <a routerLink="create-payment"   >Payment</a> -->
+    </form>
+    </div>

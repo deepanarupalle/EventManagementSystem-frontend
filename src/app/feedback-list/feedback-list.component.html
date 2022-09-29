@@ -1,0 +1,32 @@
+<!--<h2> Vegetables List</h2>-->
+<table class = "table table-striped" style="background-color:rgb(248, 241, 212);">
+    
+    <thead>
+        <tr style="border: solid; color: rgb(194, 75, 24); font-size:x-large ; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <th style="color: rgb(18, 38, 33);"> Feedback Id</th>
+            <th style="color: rgb(18, 38, 33);"> Feedback Provided </th>
+             <!-- <th> Event Cost </th>
+            
+            <th> Quantity</th>
+            <th> Discount</th>
+            <th> Discount Type</th>  -->
+             <!-- <th> Actions </th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let feedback of feedbacks" >
+            <td> {{ feedback.feedbackId }} </td>
+            <td> {{ feedback.comment }} </td>
+             <!-- <td> {{ event.eventCost }} </td>
+            <td> {{ event.quantity }} </td>
+            <td> {{ event.discount }} </td>
+            <td> {{ event.discountType }} </td> --> 
+             <td>
+                <!-- <button (click) = "updateEvent(event.eventId)" class = "btn btn-info"> Update</button>  -->
+                <!-- <button (click) = "deleteFeedback(feedback.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button> -->
+                 <!-- <button (click) = "eventDetails(event.eventId)" class = "btn btn-info" style="margin-left: 10px"> View</button>  -->
+              <!-- <button  name="{{job.companyName}}" #abc (click)="selectJob(abc.name)"  class = "btn btn-info" style="margin-left: 10px"> {{job.status }}</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table><br><br><br><br><br><br><br>  

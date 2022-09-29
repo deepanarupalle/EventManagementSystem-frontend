@@ -1,0 +1,37 @@
+<!--<h2> Vegetables List</h2>-->
+<table class = "table table-striped" style="background-color:cornsilk;">
+    <thead>
+        <tr style="border: solid; color: brown; size: 30px;">
+            <th style="color: rgb(18, 38, 33);"> Event Id</th>
+            <th style="color: rgb(18, 38, 33);"> Event Name </th>
+            <th style="color: rgb(18, 38, 33);"> Event Cost </th>
+            <th style="color: rgb(18, 38, 33);"> Location</th>
+            <th style="color: rgb(18, 38, 33);"> FromDate&Time </th>
+            <th style="color: rgb(18, 38, 33);"> ToDate&Time</th>
+            <th style="color: rgb(18, 38, 33);"> Quantity</th>
+            <th style="color: rgb(18, 38, 33);"> Discount</th>
+            <!-- <th style="color: rgb(18, 38, 33);"> Discount Type</th> -->
+            <th style="color: rgb(18, 38, 33);"> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let event of events" >
+            <td> {{ event.eventId }} </td>
+            <td> {{ event.eventName }} </td>
+            <td> {{ event.eventCost }} </td>
+            <td> {{ event.location }} </td>
+            <td> {{ event.fromDateTime }} </td>
+            <td> {{ event.toDateTime }} </td>
+            <td> {{ event.quantity }} </td>
+            <td> {{ event.discount }} </td>
+            <!-- <td> {{ event.discountType }} </td> -->
+            <td>
+                <button (click) = "updateEvent(event.eventId)" > Update</button>
+                <!-- <button (click) = "deleteEvent(event.eventId)"  style="margin-left: 10px"> Cancel</button> -->
+                <button (click) = "eventDetails(event.eventId)"  style="margin-left: 10px"> Show List</button>
+                <button (click) = "deleteEvent(event.eventId)"  style="margin-left: 10px"> Cancel</button>
+              <!--  <button  name="{{job.companyName}}" #abc (click)="selectJob(abc.name)"  class = "btn btn-info" style="margin-left: 10px"> {{job.status }}</button>-->
+            </td>
+        </tr>
+    </tbody>
+</table><br><br><br><br><br><br><br>
